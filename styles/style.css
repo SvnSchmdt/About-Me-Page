@@ -48,10 +48,17 @@ div.content img{
 }
 
 div.footer {
+    display: flex;
     position: absolute;
     bottom: 0%;
     width: 100%;
     height: 2.5rem;
-    background-color: aqua ;
+    justify-content: right;
 }
+div.footer img{
+    width: 40px;
+    margin-right: 10px;
+    margin-bottom: 10px;
 
+    
+}
