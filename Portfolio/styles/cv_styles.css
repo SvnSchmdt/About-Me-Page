@@ -1,0 +1,49 @@
+body{
+    margin: 0;
+}
+div.main{
+    display: grid;
+    grid-template-columns: min-content auto;
+    grid-template-rows: auto auto;
+    height: 100%;
+    width: 100%;
+    align-content: stretch;
+    align-items: stretch;
+
+}
+div.content{
+    grid-column: 2 / -1;
+    background-color: beige;
+}
+div.sidebar{
+
+    background-color: aliceblue;
+
+}
+div.sidebar p{
+    margin: 0;
+}
+div.sidebar h4{
+    margin: 0;
+}
+div.sidebar h3{
+    float: right;
+    padding-right: 40%;
+    border-bottom: 2px solid black;
+}
+div.sidebar ul{
+
+    font-size: small;
+    padding: px;
+    padding-left: 15px;
+    margin: 0;
+}
+
+div.footer{
+
+    grid-column: 1 / -1;
+    background-color: brown;
+
+
+}
+

@@ -1,0 +1,105 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.main{
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+    background-image: linear-gradient( #bdc3c7, #2c3e50);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;  
+}
+
+
+
+.header{
+    width: 100%;
+    background-color: transparent;
+    overflow: auto;
+}
+
+.header ul{
+    list-style-type: none;
+    background-color: white;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.3); 
+    color: white;
+    font-weight: bold;
+    border: 3px solid #f1f1f1;
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 80%;
+    padding: 20px;
+    text-align: center;
+}
+.header a{
+    float: left;
+    padding: 12px;
+    margin-top: 0;
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    width: 33.33%;
+    text-align: center;
+
+}
+div.header img{
+    width: 15px;
+    height: 15px;
+    margin-right: 5px; 
+}
+
+
+.header li a:hover{
+    background-color: transparent !important;
+    color: wheat;
+}
+@media screen  and (max-width: 500px) {
+    div.header a { 
+        float: none;
+        text-wrap: nowrap;
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+}
+div.content {
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    align-content: stretch;
+    justify-content: space-evenly;
+    align-items: center;}
+
+div.content img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+    height: 300px;
+    border-radius: 50%;
+}
+div.content h1{
+    color: white;
+}
+
+
+div.copyright {
+    position: absolute;
+    bottom: 1%;
+    color: white;
+    margin-right: 10px; 
+}
+div.copyright p{
+    margin-left: 10px;
+
+}
