@@ -1,4 +1,3 @@
-/* Allgemeine Styles */
 body {
     font-family: Arial, sans-serif;
     background-color: #f0f0f0;
@@ -8,10 +7,10 @@ body {
 
 .navigation {
     display: flex;
-    justify-content: space-between; /* Elemente gleichmäßig verteilen */
+    justify-content: space-between; 
     background-color: #333;
     overflow: hidden;
-    padding: 0 16px; /* Abstand am Rand hinzufügen */
+    padding: 0 16px; 
 }
 
 .navigation a {
@@ -19,10 +18,10 @@ body {
     justify-content: center; 
     text-align: center;
     text-decoration: none;
-    display: flex; /* Neues flex-Verhalten */
-    align-items: center; /* Zentriert die Elemente vertikal */
-    padding: 14px 0; /* Vertikaler Abstand hinzufügen */
-    transition: background-color 0.3s ease; /* Übergang für den Hover-Effekt */
+    display: flex; 
+    align-items: center; 
+    padding: 14px 0; 
+    transition: background-color 0.3s ease;
     width: 33.33%;
 }
 
@@ -35,7 +34,7 @@ body {
     width: 20px;
     height: 20px;
     margin-right: 5px;
-    vertical-align: middle; /* Zentriert das Bild vertikal */
+    vertical-align: middle; 
 }
 
 .letter {
@@ -46,7 +45,7 @@ body {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-/* Header */
+
 .header {
     text-align: center;
     margin-bottom: 20px;
@@ -58,7 +57,7 @@ body {
     margin-bottom: 10px;
 }
 
-/* Absenderadresse */
+
 .sender-address {
     margin-bottom: 20px;
 }
@@ -68,13 +67,13 @@ body {
     margin: 5px 0;
 }
 
-/* Datum */
+
 .date {
     float: right;
     color: #555;
 }
 
-/* Empfängeradresse */
+
 .recipient-address {
     margin-top: 20px;
 }
@@ -84,21 +83,21 @@ body {
     margin: 5px 0;
 }
 
-/* Betreff */
+
 .subject {
     font-weight: bold;
     margin-top: 20px;
     color: #333;
 }
 
-/* Inhalt des Schreibens */
+
 .body {
     margin-top: 20px;
     color: #333;
     line-height: 1.6;
 }
 
-/* Schlussformel */
+
 .closing {
     margin-top: 40px;
     text-align: center;
