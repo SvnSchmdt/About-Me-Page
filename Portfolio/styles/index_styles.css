@@ -65,7 +65,7 @@ div.header img{
 
 
 .header li a:hover{
-    background-color: transparent !important;
+    background-color: rgba(0,0,0, 0.4);
     color: wheat;
 }
 @media screen  and (max-width: 500px) {
