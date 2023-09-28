@@ -3,18 +3,32 @@
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
+    color: white;
+
 }
 .main{
-    display: grid;
-    width: 100vw;
-    height: 100vh;
-    grid-template-columns: auto;
-    grid-template-rows: auto auto auto;
-    background-image: linear-gradient( #bdc3c7, #2c3e50);
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;  
+  display: grid;
+  width: 100vw;
+  height: 100vh;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto auto;
+  background-image: linear-gradient( #F2994A, #F2C94C);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;  
+}
+.dark_mode{
+  display: grid;
+  width: 100vw;
+  height: 100vh;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto auto;
+  background-image: linear-gradient( #bdc3c7, #2c3e50);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;  
 }
 
 
@@ -58,9 +72,6 @@ div.header img{
     height: 25px;
     margin-right: 5px; 
     vertical-align: middle; /* Zentriert das Bild vertikal */
-
-
-
 }
 
 
@@ -98,6 +109,67 @@ div.content h1{
 }
 
 
+
+.switch {
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  .switch input {
+    opacity: 0;;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .3s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 30px;
+    width: 30px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
 div.copyright {
     position: absolute;
     bottom: 1%;
@@ -106,6 +178,10 @@ div.copyright {
 }
 div.copyright p{
     margin-left: 10px;
-    
+}
 
+.switchDescription{
+  position: absolute;
+  right: 70px;
+  bottom: 5px;
 }
