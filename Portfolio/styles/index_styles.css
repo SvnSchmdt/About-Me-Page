@@ -74,7 +74,7 @@
     color: rgba(87, 80, 84, 0.8);
     text-decoration: none;
     font-size: 20px;
-    width: 33.33%;
+    width: 25%;
     display: flex;
     justify-content: center;
     text-align: center;
@@ -88,14 +88,14 @@
   color: white;
   text-decoration: none;
   font-size: 20px;
-  width: 33.33%;
+  width: 25%;
   display: flex;
   justify-content: center;
   text-align: center;
   align-items: center;
   padding: 15px;
 }
-div.header img{
+.header img{
     width: 25px;
     height: 25px;
     margin-right: 5px; 
@@ -115,27 +115,39 @@ div.header img{
         width: 100%;
         text-align: center;
     }
+    div.content {
+      display: flex;
+      position: relative;
+      top: 50px;
+      flex-direction: column-reverse;
+      flex-wrap: wrap;
+      align-content: stretch;
+      justify-content: safe;
+      align-items: center;
+    }
 }
-div.content {
+.content {
     display: flex;
     flex-direction: column-reverse;
     flex-wrap: wrap;
     align-content: stretch;
     justify-content: space-evenly;
-    align-items: center;}
+    align-items: center;
+  }
 
-div.content img{
+.content img{
     display: block;
+    top: 50%;
     margin-left: auto;
     margin-right: auto;
     width: fit-content;
     height: 300px;
     border-radius: 50%;
 }
-div.content h1{
+.content h1{
     color: rgba(87, 80, 84, 0.8);
 }
-div.content_dark h1{
+.content_dark h1{
   color: white;
 }
 
@@ -200,12 +212,20 @@ input:checked + .slider:before {
   border-radius: 50%;
 }
 
-div.copyright {
+.copyright {
     position: absolute;
     bottom: 1%;
     margin-right: 10px; 
 }
-
+.switchDescription {
+    position: absolute;
+    right: 70px;
+    bottom: 5px;
+    color: rgba(87, 80, 84, 0.8)
+}
+.switchDescription_dark  {
+  color: white;
+}
 .copyright p{
     color: rgba(87, 80, 84, 0.8);
     margin-left: 10px;
@@ -214,7 +234,21 @@ div.copyright {
   color: white;
   margin-left: 10px;
 }
-
+.contactButton {
+  position: absolute;
+  right: 47%;
+  bottom: 5px;
+  background-color: rgba(87, 80, 84, 0.8);
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  border-radius: 15px;
+}
 .switchDescription{
   position: absolute;
   right: 70px;
