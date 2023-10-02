@@ -1,5 +1,7 @@
 function toggleDarkMode(checkbox){
 
+
+
     var mainElement = document.getElementsByClassName("main");
     var headerElement = document.getElementsByClassName("header");
     var bodyElement = document.getElementsByClassName("content");
@@ -9,7 +11,6 @@ function toggleDarkMode(checkbox){
     var applicationLetterLogo = document.getElementById("applicationLetter");
     var github = document.getElementById("github")
     var contact = document.getElementById("contact");
-
     // Change background color
     if(checkbox.checked == true){
 
@@ -59,21 +60,31 @@ function toggleDarkMode(checkbox){
 }
 
 function contactFormSubmit(){
+
     var fname = document.getElementById("fname").value;
     var lname = document.getElementById("lname").value;
     var mail = document.getElementById("mail").value;
     var country = document.getElementById("country").value;
     var message = document.getElementById("subject").value;
+    let person = {
+        vorname: fname,
+        nachname: lname,
+        email: mail,
+        land: country,
+        nachricht: message
+    };
+
 
     if(fname == "" || lname == "" || mail == "" || message == ""){
         alert("Please fill in all fields");
     }
     else{
-        console.log("Vorname: " + fname);
-        console.log("Nachname: " + lname);
-        console.log("E-Mail: " + mail);
-        console.log("Land: " + country);
-        console.log("Nachricht: " + message);
+        console.log( person);
+        console.log('Vorname: ' + person.vorname);
+        console.log('Nachname: ' + person.nachname);
+        console.log('E-Mail: ' + person.email);
+        console.log('Land: ' + person.land);
+        console.log('Nachricht: ' + person.nachricht);
         alert("Thank you for your Message, ill response asap");
 
 
