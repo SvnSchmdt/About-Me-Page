@@ -59,6 +59,18 @@ function toggleDarkMode(checkbox){
     }
 }
 
+
+function Person(fname, lname, mail, country, message){
+
+    this.fname = fname;
+    this.lname = lname;
+    this.mail = mail;
+    this.country = country;
+    this.message = message;
+
+    return this;
+}
+
 function contactFormSubmit(){
 
     var fname = document.getElementById("fname").value;
@@ -66,25 +78,20 @@ function contactFormSubmit(){
     var mail = document.getElementById("mail").value;
     var country = document.getElementById("country").value;
     var message = document.getElementById("subject").value;
-    let person = {
-        vorname: fname,
-        nachname: lname,
-        email: mail,
-        land: country,
-        nachricht: message
-    };
+
+    let person = new Person(fname, lname, mail, country, message);
 
 
     if(fname == "" || lname == "" || mail == "" || message == ""){
         alert("Please fill in all fields");
     }
     else{
-        console.log( person);
-        console.log('Vorname: ' + person.vorname);
-        console.log('Nachname: ' + person.nachname);
-        console.log('E-Mail: ' + person.email);
-        console.log('Land: ' + person.land);
-        console.log('Nachricht: ' + person.nachricht);
+        console.log(person);
+        console.log('Vorname: ' + person.fname);
+        console.log('Nachname: ' + person.lname);
+        console.log('E-Mail: ' + person.mail);
+        console.log('Land: ' + person.country);
+        console.log('Nachricht: ' + person.message);
         alert("Thank you for your Message, ill response asap");
 
 
